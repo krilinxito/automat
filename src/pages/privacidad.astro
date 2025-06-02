@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Política de Privacidad - AutomatLab" description="Política de privacidad y protección de datos de AutomatLab">
+    <Navigation />
+    <main>
+        <section class="privacy-hero">
+            <div class="container">
+                <h1 class="gradient-text">Política de Privacidad</h1>
+                <p class="subtitle">Última actualización: {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            </div>
+        </section>
+
+        <section class="privacy-content">
+            <div class="container">
+                <div class="content-wrapper glass-card">
+                    <div class="privacy-section">
+                        <h2>1. Información que Recopilamos</h2>
+                        <p>En AutomatLab, recopilamos y procesamos la siguiente información:</p>
+                        <ul>
+                            <li>Información de contacto (nombre, email, teléfono)</li>
+                            <li>Datos de uso de nuestros servicios</li>
+                            <li>Información técnica de dispositivos y navegación</li>
+                            <li>Comunicaciones con nuestro equipo</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h2>2. Uso de la Información</h2>
+                        <p>Utilizamos la información recopilada para:</p>
+                        <ul>
+                            <li>Proporcionar y mejorar nuestros servicios</li>
+                            <li>Personalizar la experiencia del usuario</li>
+                            <li>Comunicarnos con nuestros clientes</li>
+                            <li>Cumplir con obligaciones legales</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h2>3. Protección de Datos</h2>
+                        <p>Implementamos medidas de seguridad técnicas y organizativas para proteger su información:</p>
+                        <ul>
+                            <li>Encriptación de datos sensibles</li>
+                            <li>Acceso restringido a información personal</li>
+                            <li>Monitoreo regular de sistemas</li>
+                            <li>Formación en seguridad para empleados</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h2>4. Sus Derechos</h2>
+                        <p>Como usuario, tiene derecho a:</p>
+                        <ul>
+                            <li>Acceder a sus datos personales</li>
+                            <li>Rectificar información inexacta</li>
+                            <li>Solicitar la eliminación de datos</li>
+                            <li>Oponerse al procesamiento de datos</li>
+                            <li>Portabilidad de datos</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h2>6. Contacto</h2>
+                        <p>Para cualquier consulta sobre nuestra política de privacidad, puede contactarnos en:</p>
+                        <div class="contact-info">
+                            <p>Email: privacy@automatlab.com</p>
+                            <p>Teléfono: (123) 456-7890</p>
+                            <p>Dirección: Ciudad Tecnológica #123, Innovation Hub, CP 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .privacy-hero {
+        padding: calc(var(--space-xl) * 2) 0 var(--space-xl);
+        text-align: center;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .privacy-hero h1 {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--color-text-light);
+    }
+
+    .privacy-content {
+        padding: var(--space-xl) 0;
+    }
+
+    .content-wrapper {
+        padding: var(--space-xl);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .privacy-section {
+        margin-bottom: var(--space-xl);
+    }
+
+    .privacy-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-lg);
+        color: var(--color-primary);
+    }
+
+    .privacy-section p {
+        margin-bottom: var(--space-md);
+        color: var(--color-text-light);
+        line-height: 1.6;
+    }
+
+    .privacy-section ul {
+        list-style: none;
+        padding-left: var(--space-lg);
+        margin-bottom: var(--space-lg);
+    }
+
+    .privacy-section ul li {
+        position: relative;
+        margin-bottom: var(--space-sm);
+        color: var(--color-text-light);
+    }
+
+    .privacy-section ul li::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+    }
+
+    .contact-info {
+        background: rgba(193, 120, 23, 0.05);
+        padding: var(--space-lg);
+        border-radius: 8px;
+    }
+
+    .contact-info p {
+        margin-bottom: var(--space-sm);
+    }
+
+    .contact-info p:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .privacy-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .content-wrapper {
+            padding: var(--space-lg);
+        }
+
+        .privacy-section h2 {
+            font-size: 1.3rem;
+        }
+    }
+</style> 

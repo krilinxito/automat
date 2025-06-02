@@ -1,0 +1,411 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Soluciones - AutomatLab" description="Descubre nuestras soluciones de automatización inteligente y casos de éxito">
+    <Navigation />
+    <main>
+        <section class="solutions-hero">
+            <div class="container">
+                <h1 class="gradient-text">Nuestras Soluciones</h1>
+                <p class="subtitle">Transformando negocios con automatización inteligente</p>
+            </div>
+            <div class="hero-visual">
+                <div class="geometric-shape"></div>
+                <div class="circuit-lines"></div>
+            </div>
+        </section>
+
+        <section class="solutions-grid">
+            <div class="container">
+                <div class="solution-card glass-card">
+                    <div class="solution-content">
+                        <h2>Chat Automatizado</h2>
+                        <p class="solution-description">Atención al cliente 24/7 con IA avanzada</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Satisfacción del Cliente</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-60%</span>
+                                <span class="metric-label">Tiempo de Respuesta</span>
+                            </div>
+                        </div>
+                        <a href="/servicios/chat" class="btn">Ver Detalles</a>
+                    </div>
+                    <div class="solution-visual">
+                        <div class="chat-demo">
+                            <div class="chat-message bot">
+                                <p>¡Hola! ¿En qué puedo ayudarte?</p>
+                            </div>
+                            <div class="chat-message user">
+                                <p>Necesito información sobre precios</p>
+                            </div>
+                            <div class="chat-message bot">
+                                <p>¡Con gusto! Nuestros planes incluyen...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-content">
+                        <h2>Gestión de Citas</h2>
+                        <p class="solution-description">Sistema inteligente de programación y recordatorios</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">-80%</span>
+                                <span class="metric-label">Inasistencias</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">+40%</span>
+                                <span class="metric-label">Eficiencia</span>
+                            </div>
+                        </div>
+                        <a href="/servicios/citas" class="btn">Ver Detalles</a>
+                    </div>
+                    <div class="solution-visual">
+                        <div class="calendar-demo">
+                            <div class="calendar-header">
+                                <h3>Calendario</h3>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="calendar-day active">Hoy</div>
+                                <div class="calendar-event">
+                                    <span class="event-time">10:00</span>
+                                    <span class="event-title">Reunión</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-card glass-card">
+                    <div class="solution-content">
+                        <h2>Automatización de Ventas</h2>
+                        <p class="solution-description">Optimización del proceso comercial con IA</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">+45%</span>
+                                <span class="metric-label">Conversión</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2.5x</span>
+                                <span class="metric-label">ROI</span>
+                            </div>
+                        </div>
+                        <a href="/servicios/ventas" class="btn">Ver Detalles</a>
+                    </div>
+                    <div class="solution-visual">
+                        <div class="sales-demo">
+                            <div class="chart-container">
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 80%"></div>
+                                <div class="chart-bar" style="height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content glass-card">
+                    <h2>¿Listo para Transformar tu Negocio?</h2>
+                    <p>Descubre cómo nuestras soluciones pueden impulsar tu crecimiento</p>
+                    <a href="/contacto" class="btn">Solicitar Demo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .solutions-hero {
+        padding: calc(var(--space-xl) * 2) 0 var(--space-xl);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .solutions-hero h1 {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--color-text-light);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-visual {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 600px;
+        height: 100%;
+        opacity: 0.1;
+        pointer-events: none;
+    }
+
+    .geometric-shape {
+        position: absolute;
+        top: 50%;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation: morphShape 15s ease-in-out infinite;
+    }
+
+    .circuit-lines {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: 
+            linear-gradient(90deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px,
+            linear-gradient(0deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px;
+        animation: rotate 20s linear infinite;
+    }
+
+    .solutions-grid {
+        padding: var(--space-xl) 0;
+    }
+
+    .solution-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+        padding: var(--space-xl);
+        margin-bottom: var(--space-xl);
+    }
+
+    .solution-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-md);
+        color: var(--color-primary);
+    }
+
+    .solution-description {
+        color: var(--color-text-light);
+        margin-bottom: var(--space-lg);
+    }
+
+    .metrics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+        margin-bottom: var(--space-xl);
+    }
+
+    .metric {
+        text-align: center;
+        padding: var(--space-md);
+        background: rgba(193, 120, 23, 0.05);
+        border-radius: 8px;
+    }
+
+    .metric-value {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin-bottom: var(--space-xs);
+    }
+
+    .metric-label {
+        font-size: 0.9rem;
+        color: var(--color-text-light);
+    }
+
+    .solution-visual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chat-demo,
+    .calendar-demo,
+    .sales-demo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .chat-message {
+        margin-bottom: var(--space-md);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: 12px;
+        max-width: 80%;
+    }
+
+    .chat-message.bot {
+        background: var(--color-primary);
+        color: var(--color-surface);
+        margin-right: auto;
+    }
+
+    .chat-message.user {
+        background: var(--color-surface);
+        margin-left: auto;
+    }
+
+    .calendar-header {
+        text-align: center;
+        margin-bottom: var(--space-lg);
+    }
+
+    .calendar-grid {
+        display: grid;
+        gap: var(--space-sm);
+    }
+
+    .calendar-day {
+        padding: var(--space-sm);
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .calendar-day.active {
+        background: var(--color-primary);
+        color: var(--color-surface);
+    }
+
+    .calendar-event {
+        background: rgba(193, 120, 23, 0.1);
+        padding: var(--space-sm);
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .chart-container {
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: var(--space-md);
+    }
+
+    .chart-bar {
+        width: 40px;
+        background: linear-gradient(to top, var(--color-primary), var(--color-accent));
+        border-radius: 4px 4px 0 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: var(--space-xl);
+    }
+
+    .cases-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-xl);
+    }
+
+    .case-card {
+        padding: var(--space-xl);
+    }
+
+    .case-header {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+        margin-bottom: var(--space-lg);
+    }
+
+    .case-logo {
+        width: 48px;
+        height: 48px;
+        background: var(--color-primary);
+        color: var(--color-surface);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    .case-description {
+        color: var(--color-text-light);
+        margin-bottom: var(--space-lg);
+        font-style: italic;
+    }
+
+    .case-metrics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .case-metric {
+        text-align: center;
+    }
+
+    .cta-section {
+        padding: var(--space-xl) 0;
+    }
+
+    .cta-content {
+        text-align: center;
+        padding: var(--space-xl);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .cta-content p {
+        color: var(--color-text-light);
+        margin-bottom: var(--space-lg);
+    }
+
+    @keyframes morphShape {
+        0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+        50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+        75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+        100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 968px) {
+        .solutions-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .solution-card {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+            display: none;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+    }
+</style> 

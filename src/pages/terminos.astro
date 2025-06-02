@@ -1,0 +1,177 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Términos de Uso - AutomatLab" description="Términos y condiciones de uso de los servicios de AutomatLab">
+    <Navigation />
+    <main>
+        <section class="terms-hero">
+            <div class="container">
+                <h1 class="gradient-text">Términos de Uso</h1>
+                <p class="subtitle">Última actualización: {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            </div>
+        </section>
+
+        <section class="terms-content">
+            <div class="container">
+                <div class="content-wrapper glass-card">
+                    <div class="terms-section">
+                        <h2>1. Aceptación de los Términos</h2>
+                        <p>Al acceder y utilizar los servicios de AutomatLab, usted acepta estar sujeto a estos términos de uso. Si no está de acuerdo con alguna parte de estos términos, no podrá acceder al servicio.</p>
+                    </div>
+
+                    <div class="terms-section">
+                        <h2>2. Descripción del Servicio</h2>
+                        <p>AutomatLab proporciona soluciones de automatización que incluyen:</p>
+                        <ul>
+                            <li>Sistemas de chat automatizado</li>
+                            <li>Gestión de citas</li>
+                            <li>Automatización de ventas</li>
+                            <li>Análisis y reportes</li>
+                        </ul>
+                    </div>
+
+               
+
+                    <div class="terms-section">
+                        <h2>3. Limitación de Responsabilidad</h2>
+                        <p>AutomatLab no será responsable de:</p>
+                        <ul>
+                            <li>Daños indirectos o consecuentes</li>
+                            <li>Pérdida de datos o ingresos</li>
+                            <li>Interrupciones del servicio</li>
+                            <li>Problemas técnicos fuera de nuestro control</li>
+                        </ul>
+                    </div>
+
+                    <div class="terms-section">
+                        <h2>4. Modificaciones del Servicio</h2>
+                        <p>Nos reservamos el derecho de:</p>
+                        <ul>
+                            <li>Modificar o descontinuar el servicio</li>
+                            <li>Cambiar tarifas y características</li>
+                            <li>Actualizar estos términos</li>
+                            <li>Limitar el acceso al servicio</li>
+                        </ul>
+                    </div>
+
+                    <div class="terms-section">
+                        <h2>5. Contacto</h2>
+                        <p>Para cualquier consulta sobre estos términos, puede contactarnos en:</p>
+                        <div class="contact-info">
+                            <p>Email: legal@automatlab.com</p>
+                            <p>Teléfono: (123) 456-7890</p>
+                            <p>Dirección: Ciudad Tecnológica #123, Innovation Hub, CP 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .terms-hero {
+        padding: calc(var(--space-xl) * 2) 0 var(--space-xl);
+        text-align: center;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .terms-hero h1 {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--color-text-light);
+    }
+
+    .terms-content {
+        padding: var(--space-xl) 0;
+    }
+
+    .content-wrapper {
+        padding: var(--space-xl);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .terms-section {
+        margin-bottom: var(--space-xl);
+    }
+
+    .terms-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .terms-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-lg);
+        color: var(--color-primary);
+    }
+
+    .terms-section p {
+        margin-bottom: var(--space-md);
+        color: var(--color-text-light);
+        line-height: 1.6;
+    }
+
+    .terms-section ul {
+        list-style: none;
+        padding-left: var(--space-lg);
+        margin-bottom: var(--space-lg);
+    }
+
+    .terms-section ul li {
+        position: relative;
+        margin-bottom: var(--space-sm);
+        color: var(--color-text-light);
+    }
+
+    .terms-section ul li::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+    }
+
+    .contact-info {
+        background: rgba(193, 120, 23, 0.05);
+        padding: var(--space-lg);
+        border-radius: 8px;
+    }
+
+    .contact-info p {
+        margin-bottom: var(--space-sm);
+    }
+
+    .contact-info p:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .terms-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .content-wrapper {
+            padding: var(--space-lg);
+        }
+
+        .terms-section h2 {
+            font-size: 1.3rem;
+        }
+    }
+</style> 

@@ -1,0 +1,336 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import PlatformLogos from '../../components/PlatformLogos.astro';
+---
+
+<Layout title="Chat Automatizado - AutomatLab" description="Soluciones de chat automatizado con IA para mejorar la atención al cliente 24/7">
+    <Navigation />
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <h1 class="gradient-text">Chat Automatizado</h1>
+                <p class="subtitle">Atención al cliente inteligente 24/7</p>
+                <PlatformLogos 
+                    showWhatsapp={true}
+                    showMessenger={true}
+                    showTelegram={true}
+                    label="Disponible en"
+                />
+            </div>
+            <div class="hero-visual">
+                <div class="geometric-shape"></div>
+                <div class="circuit-lines"></div>
+            </div>
+        </section>
+
+        <section class="service-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <h3>Respuestas Instantáneas</h3>
+                        <p>Respuestas automáticas y precisas a las consultas más frecuentes de tus clientes.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </div>
+                        <h3>Personalización Avanzada</h3>
+                        <p>Chatbots entrenados con el tono y estilo de tu marca para una experiencia única en WhatsApp, Messenger y Telegram.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Múltiples Canales</h3>
+                        <p>Integración con WhatsApp, Facebook Messenger y Telegram para una atención omnicanal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-content glass-card">
+                        <h2>¿Cómo Funciona?</h2>
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Análisis y Configuración</h3>
+                                <p>Configuramos los chatbots para cada plataforma (WhatsApp, Messenger y Telegram) según tus necesidades específicas.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Entrenamiento IA</h3>
+                                <p>Entrenamos el sistema con datos históricos y casos de uso específicos de tu negocio.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Implementación y Pruebas</h3>
+                                <p>Implementamos el sistema y realizamos pruebas exhaustivas para garantizar su funcionamiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-visual glass-card">
+                        <div class="demo-chat">
+                            <div class="chat-message bot">
+                                <p>¡Hola! ¿En qué puedo ayudarte hoy?</p>
+                            </div>
+                            <div class="chat-message user">
+                                <p>Necesito información sobre sus servicios</p>
+                            </div>
+                            <div class="chat-message bot">
+                                <p>¡Con gusto! Ofrecemos soluciones de automatización para...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content glass-card">
+                    <h2>Potencia tu Atención al Cliente</h2>
+                    <p>Descubre cómo nuestras soluciones de chat automatizado pueden transformar tu negocio.</p>
+                    <a href="/contacto" class="btn">Solicitar Demo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .service-hero {
+        padding: calc(var(--space-xl) * 2) 0 var(--space-xl);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .service-hero h1 {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--color-text-light);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-visual {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 600px;
+        height: 100%;
+        opacity: 0.1;
+        pointer-events: none;
+    }
+
+    .geometric-shape {
+        position: absolute;
+        top: 50%;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation: morphShape 15s ease-in-out infinite;
+    }
+
+    .circuit-lines {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: 
+            linear-gradient(90deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px,
+            linear-gradient(0deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px;
+        animation: rotate 20s linear infinite;
+    }
+
+    .service-features {
+        padding: var(--space-xl) 0;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .feature-card {
+        padding: var(--space-xl);
+        text-align: center;
+    }
+
+    .feature-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto var(--space-lg);
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-surface);
+    }
+
+    .feature-card h3 {
+        margin-bottom: var(--space-md);
+    }
+
+    .service-details {
+        padding: var(--space-xl) 0;
+    }
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+    }
+
+    .details-content {
+        padding: var(--space-xl);
+    }
+
+    .details-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-xl);
+    }
+
+    .step {
+        display: flex;
+        gap: var(--space-lg);
+        margin-bottom: var(--space-xl);
+    }
+
+    .step:last-child {
+        margin-bottom: 0;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        background: var(--color-primary);
+        color: var(--color-surface);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        flex-shrink: 0;
+    }
+
+    .step-content h3 {
+        margin-bottom: var(--space-xs);
+    }
+
+    .details-visual {
+        padding: var(--space-xl);
+    }
+
+    .demo-chat {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .chat-message {
+        margin-bottom: var(--space-md);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: 12px;
+        max-width: 80%;
+    }
+
+    .chat-message.bot {
+        background: var(--color-primary);
+        color: var(--color-surface);
+        margin-right: auto;
+    }
+
+    .chat-message.user {
+        background: var(--color-surface);
+        margin-left: auto;
+    }
+
+    .chat-message p {
+        margin: 0;
+    }
+
+    .cta-section {
+        padding: var(--space-xl) 0;
+    }
+
+    .cta-content {
+        text-align: center;
+        padding: var(--space-xl);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .cta-content p {
+        color: var(--color-text-light);
+        margin-bottom: var(--space-lg);
+    }
+
+    @keyframes morphShape {
+        0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+        50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+        75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+        100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 968px) {
+        .service-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .details-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+            display: none;
+        }
+    }
+</style> 

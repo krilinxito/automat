@@ -1,0 +1,101 @@
+<header class="header">
+    <nav class="nav container">
+        <a href="/" class="logo">
+            <span class="gradient-text">Automat</span>Lab
+        </a>
+        
+        <div class="nav-links">
+            <a href="/soluciones">Soluciones</a>
+            <a href="/nosotros">Nosotros</a>
+            <a href="/contacto" class="btn">Contactar</a>
+        </div>
+
+        <button class="mobile-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+
+<style>
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background: rgba(250, 243, 224, 0.8);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(193, 120, 23, 0.1);
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--color-text);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:not(.btn):hover {
+        color: var(--color-primary);
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 6px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: var(--space-xs);
+    }
+
+    .mobile-menu span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: var(--color-text);
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: flex;
+        }
+    }
+</style>
+
+<script>
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu?.addEventListener('click', () => {
+        navLinks?.classList.toggle('show');
+        mobileMenu.classList.toggle('active');
+    });
+</script> 

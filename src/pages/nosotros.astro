@@ -1,0 +1,292 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Sobre Nosotros - AutomatLab" description="Conoce más sobre AutomatLab y nuestra misión de transformar negocios con automatización inteligente">
+    <Navigation />
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="gradient-text">Sobre Nosotros</h1>
+                <p class="subtitle">Transformando el futuro de los negocios con automatización inteligente</p>
+            </div>
+        </section>
+
+        <section class="about-mission">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="mission-content glass-card">
+                        <h2>Nuestra Misión</h2>
+                        <p>En AutomatLab, nos dedicamos a empoderar a las empresas con soluciones de automatización inteligente que transforman la manera en que interactúan con sus clientes y gestionan sus operaciones.</p>
+                        <p>Creemos en la combinación perfecta entre la tecnología avanzada y el toque humano, creando soluciones que no solo automatizan tareas, sino que mejoran significativamente la experiencia del cliente.</p>
+                    </div>
+                    <div class="mission-visual">
+                        <div class="geometric-shape"></div>
+                        <div class="circuit-lines"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2 class="section-title">Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Confiabilidad</h3>
+                        <p>Construimos soluciones robustas y seguras en las que nuestros clientes pueden confiar plenamente.</p>
+                    </div>
+
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Innovación</h3>
+                        <p>Constantemente exploramos nuevas tecnologías y enfoques para ofrecer las mejores soluciones.</p>
+                    </div>
+
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Colaboración</h3>
+                        <p>Trabajamos estrechamente con nuestros clientes para entender sus necesidades y crear soluciones personalizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">Un grupo apasionado de expertos en tecnología y automatización</p>
+                <div class="team-grid">
+                    <div class="team-card glass-card">
+                        <div class="team-image placeholder"></div>
+                        <h3>Ana García</h3>
+                        <p class="team-role">CEO & Fundadora</p>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-image placeholder"></div>
+                        <h3>Carlos Rodríguez</h3>
+                        <p class="team-role">CTO</p>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-image placeholder"></div>
+                        <h3>Laura Martínez</h3>
+                        <p class="team-role">Directora de Innovación</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .about-hero {
+        padding: calc(var(--space-xl) * 2) 0 var(--space-xl);
+        text-align: center;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .about-hero h1 {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--color-text-light);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-mission {
+        padding: var(--space-xl) 0;
+    }
+
+    .mission-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+        align-items: center;
+    }
+
+    .mission-content {
+        padding: var(--space-xl);
+    }
+
+    .mission-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-lg);
+    }
+
+    .mission-content p {
+        color: var(--color-text-light);
+        margin-bottom: var(--space-md);
+    }
+
+    .mission-visual {
+        position: relative;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .geometric-shape {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation: morphShape 15s ease-in-out infinite;
+        opacity: 0.1;
+    }
+
+    .circuit-lines {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+        background: 
+            linear-gradient(90deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px,
+            linear-gradient(0deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px;
+        opacity: 0.1;
+        animation: rotate 20s linear infinite;
+    }
+
+    .values-section,
+    .team-section {
+        padding: var(--space-xl) 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: var(--color-text-light);
+        max-width: 600px;
+        margin: 0 auto var(--space-xl);
+    }
+
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .value-card {
+        padding: var(--space-xl);
+        text-align: center;
+    }
+
+    .value-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto var(--space-lg);
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-surface);
+    }
+
+    .value-card h3 {
+        margin-bottom: var(--space-md);
+    }
+
+    .value-card p {
+        color: var(--color-text-light);
+        margin: 0;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .team-card {
+        padding: var(--space-lg);
+        text-align: center;
+    }
+
+    .team-image.placeholder {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto var(--space-md);
+        background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+        border-radius: 50%;
+        opacity: 0.1;
+    }
+
+    .team-card h3 {
+        margin-bottom: var(--space-xs);
+    }
+
+    .team-role {
+        color: var(--color-text-light);
+        margin: 0;
+    }
+
+    @keyframes morphShape {
+        0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+        50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+        75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+        100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    }
+
+    @keyframes rotate {
+        from { transform: translate(-50%, -50%) rotate(0deg); }
+        to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    @media (max-width: 968px) {
+        .about-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .mission-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .mission-visual {
+            height: 300px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+    }
+</style> 

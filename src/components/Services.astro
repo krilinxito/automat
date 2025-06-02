@@ -1,0 +1,129 @@
+<section id="servicios" class="services">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="gradient-text">Nuestros Servicios</span>
+        </h2>
+        <p class="section-subtitle">
+            Soluciones de automatización inteligente diseñadas para impulsar tu negocio
+        </p>
+
+        <a href="/servicios/chat" style="text-decoration: none;" >
+        <div class="services-grid">
+            <div class="service-card glass-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h3>Chat Automatizado</h3>
+                <p>Asistentes virtuales inteligentes que atienden a tus clientes 24/7, responden preguntas y gestionan consultas de forma natural y eficiente.</p>
+            </div>
+        </a>
+        <a href="/servicios/citas" style="text-decoration: none;">
+            <div class="service-card glass-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3>Gestión de Citas</h3>
+                <p>Sistema inteligente de programación que optimiza tu agenda, reduce conflictos y envía recordatorios automáticos a tus clientes.</p>
+            </div>
+        </a>
+        <a href="/servicios/ventas" style="text-decoration: none;">
+            <div class="service-card glass-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </div>
+                <h3>Automatización de Ventas</h3>
+                <p>Optimiza tu proceso de ventas con seguimiento automático de leads, cualificación inteligente y reportes detallados en tiempo real.</p>
+            </div>
+        </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .services {
+        padding: var(--space-xl) 0;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .section-subtitle {
+        text-align: center;
+        color: var(--color-text-light);
+        max-width: 600px;
+        margin: 0 auto var(--space-xl);
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-lg);
+        margin-top: var(--space-xl);
+    }
+
+    .service-card {
+        padding: var(--space-xl);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .service-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: var(--color-primary);
+        color: var(--color-surface);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: var(--space-lg);
+    }
+
+    .service-card h3 {
+        color: var(--color-text);
+        margin-bottom: var(--space-md);
+        font-size: 1.5rem;
+    }
+
+    .service-card p {
+        color: var(--color-text-light);
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style> 

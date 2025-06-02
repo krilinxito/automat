@@ -1,0 +1,389 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import PlatformLogos from '../../components/PlatformLogos.astro';
+---
+
+<Layout title="Automatización de Ventas - AutomatLab" description="Soluciones de automatización de ventas para optimizar tu proceso comercial y aumentar tus conversiones">
+    <Navigation />
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <h1 class="gradient-text">Automatización de Ventas</h1>
+                <p class="subtitle">Optimiza tu proceso de ventas con inteligencia artificial</p>
+                <PlatformLogos 
+                    showMarketplace={true}
+                    showMessenger={true}
+                    label="Integrado con"
+                />
+            </div>
+            <div class="hero-visual">
+                <div class="geometric-shape"></div>
+                <div class="circuit-lines"></div>
+            </div>
+        </section>
+
+        <section class="service-features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20v-6M6 20V10M18 20V4"></path>
+                            </svg>
+                        </div>
+                        <h3>Seguimiento Inteligente</h3>
+                        <p>Monitoreo automático del ciclo de ventas y puntos de contacto con clientes.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Automatización de Procesos</h3>
+                        <p>Integración con Marketplace de Facebook y respuestas automáticas en Messenger para optimizar tus ventas online.</p>
+                    </div>
+
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18"></path>
+                                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                            </svg>
+                        </div>
+                        <h3>Ventas en Marketplace</h3>
+                        <p>Gestión automatizada de tus publicaciones en Marketplace con respuestas instantáneas a consultas de compradores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-content glass-card">
+                        <h2>Beneficios Clave</h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Mayor Satisfacción del Cliente</h3>
+                                    <p>Respuestas más rápidas y seguimiento consistente.</p>
+                                </div>
+                            </div>
+
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"></path>
+                                        <path d="M15 7h6v6"></path>
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Incremento en Conversiones</h3>
+                                    <p>Mayor tasa de conversión gracias a la integración con Marketplace y respuestas automáticas en Messenger.</p>
+                                </div>
+                            </div>
+
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Datos en Tiempo Real</h3>
+                                    <p>Métricas y análisis instantáneos del rendimiento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-visual glass-card">
+                        <div class="sales-dashboard">
+                            <div class="dashboard-header">
+                                <h3>Panel de Ventas</h3>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">85%</span>
+                                    <span class="metric-label">Tasa de Conversión</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2.5x</span>
+                                    <span class="metric-label">ROI</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">-40%</span>
+                                    <span class="metric-label">Tiempo de Ciclo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content glass-card">
+                    <h2>Impulsa tus Ventas</h2>
+                    <p>Descubre cómo nuestra solución de automatización puede transformar tu proceso de ventas.</p>
+                    <a href="/contacto" class="btn">Solicitar Demo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .service-hero {
+        padding: calc(var(--space-xl) * 2) 0 var(--space-xl);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            180deg,
+            var(--color-background) 0%,
+            rgba(193, 120, 23, 0.05) 100%
+        );
+    }
+
+    .service-hero h1 {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--color-text-light);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-visual {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 600px;
+        height: 100%;
+        opacity: 0.1;
+        pointer-events: none;
+    }
+
+    .geometric-shape {
+        position: absolute;
+        top: 50%;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation: morphShape 15s ease-in-out infinite;
+    }
+
+    .circuit-lines {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: 
+            linear-gradient(90deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px,
+            linear-gradient(0deg, var(--color-primary) 1px, transparent 1px) 0 0 / 20px 20px;
+        animation: rotate 20s linear infinite;
+    }
+
+    .service-features {
+        padding: var(--space-xl) 0;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .feature-card {
+        padding: var(--space-xl);
+        text-align: center;
+    }
+
+    .feature-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto var(--space-lg);
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-surface);
+    }
+
+    .feature-card h3 {
+        margin-bottom: var(--space-md);
+    }
+
+    .service-details {
+        padding: var(--space-xl) 0;
+    }
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+    }
+
+    .details-content {
+        padding: var(--space-xl);
+    }
+
+    .details-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-xl);
+    }
+
+    .benefits-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xl);
+    }
+
+    .benefit-item {
+        display: flex;
+        gap: var(--space-lg);
+    }
+
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-surface);
+        flex-shrink: 0;
+    }
+
+    .benefit-content h3 {
+        margin-bottom: var(--space-xs);
+    }
+
+    .benefit-content p {
+        color: var(--color-text-light);
+        margin: 0;
+    }
+
+    .details-visual {
+        padding: var(--space-xl);
+    }
+
+    .sales-dashboard {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .dashboard-header {
+        margin-bottom: var(--space-xl);
+        text-align: center;
+    }
+
+    .dashboard-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .metric {
+        text-align: center;
+        padding: var(--space-md);
+        background: rgba(193, 120, 23, 0.1);
+        border-radius: 8px;
+    }
+
+    .metric-value {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        margin-bottom: var(--space-xs);
+    }
+
+    .metric-label {
+        font-size: 0.9rem;
+        color: var(--color-text-light);
+    }
+
+    .cta-section {
+        padding: var(--space-xl) 0;
+    }
+
+    .cta-content {
+        text-align: center;
+        padding: var(--space-xl);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .cta-content p {
+        color: var(--color-text-light);
+        margin-bottom: var(--space-lg);
+    }
+
+    @keyframes morphShape {
+        0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+        25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+        50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+        75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+        100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 968px) {
+        .service-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .details-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+            display: none;
+        }
+
+        .benefit-item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .benefit-icon {
+            margin: 0 auto;
+        }
+    }
+</style> 
